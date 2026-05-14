@@ -61,8 +61,10 @@ export function Header() {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              View Documentation
+            <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <a href="https://docs.google.com/document/d/1tBPTUKPnwxWOrL5TbvpRuMhH2KVM8M6-GEPYdcamWCU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                View Documentation
+              </a>
             </Button>
           </div>
 
@@ -99,8 +101,10 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-2">
-              View Documentation
+            <Button asChild className="w-full bg-primary text-primary-foreground hover:bg-primary/90 mt-2">
+              <a href="https://docs.google.com/document/d/1tBPTUKPnwxWOrL5TbvpRuMhH2KVM8M6-GEPYdcamWCU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                View Documentation
+              </a>
             </Button>
           </nav>
         </motion.div>
