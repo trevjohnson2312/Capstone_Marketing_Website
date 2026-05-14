@@ -54,13 +54,17 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
         >
-          <Button size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
-            <Zap className="w-5 h-5 mr-2" />
-            See How It Works
+          <Button asChild size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+            <a href="#solution">
+              <Zap className="w-5 h-5 mr-2" />
+              See How It Works
+            </a>
           </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-border hover:bg-secondary">
-            <Brain className="w-5 h-5 mr-2" />
-            Meet The Team
+          <Button asChild size="lg" variant="outline" className="text-lg px-8 py-6 border-border hover:bg-secondary">
+            <a href="#team">
+              <Brain className="w-5 h-5 mr-2" />
+              Meet The Team
+            </a>
           </Button>
         </motion.div>
 
